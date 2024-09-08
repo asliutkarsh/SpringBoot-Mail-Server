@@ -34,3 +34,4 @@ build/
 
 #Dev application yaml
 application-dev.yml
+/src/main/resources/application-dev.yaml

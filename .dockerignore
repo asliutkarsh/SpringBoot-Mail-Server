@@ -16,4 +16,4 @@ docker-compose.override.yml
 .classpath
 
 # Dev yaml
-application-dev.yml
+/src/main/resources/application-dev.yaml

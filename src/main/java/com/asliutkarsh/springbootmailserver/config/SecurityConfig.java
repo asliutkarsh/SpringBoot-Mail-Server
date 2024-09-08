@@ -13,14 +13,12 @@ import java.util.List;
 @EnableWebMvc
 public class SecurityConfig {
 
-    private static final String ALLOWED_ORIGINS = List.of("http://localhost:3000").toString();
-
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins(ALLOWED_ORIGINS).allowedMethods("GET", "POST", "PUT", "DELETE");
+                registry.addMapping("/**").allowedOrigins("http://127.0.0.1:5500/").allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
     }

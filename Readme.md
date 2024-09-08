@@ -68,7 +68,7 @@ To deploy the application using Docker, follow these steps:
     - Tag the Docker image with your Docker Hub username and repository name by running the following command: ```docker tag mail-server <username>/mail-server```
     - Push the Docker image to Docker Hub by running the following command: ```docker push <username>/mail-server```
 
-##Usage
+## Usage
 
 ### Sending Plain Text Emails
 To send a plain text email, use the following endpoint:
